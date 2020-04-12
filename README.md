@@ -33,6 +33,28 @@ See the classroom instruction and code comments for more details on each of thes
 3. Compile: `cmake .. && make`
 4. Run it: `./2D_feature_tracking`.
 
+For ***keypoint detection*** :
+
+* [Shi-Tomasi](https://docs.opencv.org/3.4/d8/dd8/tutorial_good_features_to_track.html)
+* [Harris](https://docs.opencv.org/3.4/d4/d7d/tutorial_harris_detector.html)
+* [FAST](https://docs.opencv.org/3.4/df/d0c/tutorial_py_fast.html)
+* [BRISK](https://docs.opencv.org/3.4/de/dbf/classcv_1_1BRISK.html)
+* [ORB](https://docs.opencv.org/3.4/db/d95/classcv_1_1ORB.html)
+* [AKAZE](https://docs.opencv.org/3.4/db/d70/tutorial_akaze_matching.html)
+* [SIFT](https://docs.opencv.org/4.0.1/d5/d3c/classcv_1_1xfeatures2d_1_1SIFT.html)
+
+Also, the ***decscriptor extraction*** algorithms are as follows:
+
+* [BRISK](https://docs.opencv.org/3.4/de/dbf/classcv_1_1BRISK.html)
+* [BRIEF](https://github.com/opencv/opencv_contrib/blob/master/modules/xfeatures2d/src/brief.cpp)
+* [ORB](https://docs.opencv.org/3.4/db/d95/classcv_1_1ORB.html)
+* [FREAK](https://docs.opencv.org/4.1.0/df/db4/classcv_1_1xfeatures2d_1_1FREAK.html)
+* [AKAZE](https://docs.opencv.org/3.4/db/d70/tutorial_akaze_matching.html)
+* [SIFT](https://docs.opencv.org/4.0.1/d5/d3c/classcv_1_1xfeatures2d_1_1SIFT.html)
+
+Finally, [Brute-Force](https://docs.opencv.org/3.4/d3/da1/classcv_1_1BFMatcher.html) and [FLANN](https://docs.opencv.org/3.4/d5/d6f/tutorial_feature_flann_matcher.html) with k-nearest neighbor (kNN) are employed for ***feature matching***.
+
+
 
 Below I list the execution time along with the number of detected and matched features for several algorithms for all 10 images in the sample dataset and their averages.
 The format in the table is #Matched\_Features [#Detected\_Features] (TOTAL_EXECUTION_TIME). The statistics is based on the default parameter settings in OpenCV. Also, the numbers are for the whole images (not only for the immediately preceding vehicle in the ego lane).
